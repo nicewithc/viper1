@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d0b">
+  <meta name="description" content="Die Links und Social-Media-Profile von Viper an einem Ort.">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Viper — Links & Bio">
+  <meta property="og:description" content="Gaming, Community und meine wichtigsten Links an einem Ort.">
+  <meta property="og:site_name" content="Viper">
+  <title>Viper — Links & Bio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#links">Zum Inhalt springen</a>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Viper Startseite"><span class="brand-mark">V</span><span>VIPER<span class="brand-dot">.</span></span></a>
+    <div class="top-actions">
+      <span class="live-chip"><span class="live-dot"></span> DIGITAL SPACE</span>
+      <button class="icon-button" id="themeToggle" aria-label="Farbschema wechseln" title="Farbschema wechseln">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42m-9.88 9.88-1.42 1.42"/><circle cx="12" cy="12" r="4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero panel reveal">
+      <div class="hero-grid"></div>
+      <div class="profile-row">
+        <div class="avatar-wrap">
+          <div class="avatar" role="img" aria-label="Viper Profilbild-Platzhalter"><span>V</span></div>
+          <span class="avatar-status" aria-hidden="true"></span>
+        </div>
+        <div class="profile-meta">
+          <div class="eyebrow"><span class="sparkle">✦</span> PERSONAL SPACE / 001</div>
+          <h1>Hey, ich bin <span class="gradient-text">Viper</span><span class="wave">↗</span></h1>
+          <p class="subtitle">Gamer. Creator. Einfach ich.</p>
+        </div>
+      </div>
+      <p class="intro">Willkommen auf meiner kleinen Ecke im Internet. Hier findest du meine wichtigsten Links, Socials und alles, was zu mir gehört.</p>
+      <div class="hero-tags"><span>🎮 Gaming</span><span>⚡ Good Vibes</span><span>🖥️ Tech</span><span>🐍 Viper Mode</span></div>
+      <div class="hero-bottom">
+        <div class="micro-stat"><span class="stat-label">STATUS</span><span class="stat-value"><i class="tiny-dot"></i> IN MY ZONE</span></div>
+        <div class="micro-stat"><span class="stat-label">LOCAL TIME</span><span class="stat-value" id="clock">--:--:--</span></div>
+        <a class="scroll-hint" href="#links">SCROLL TO EXPLORE <span>↓</span></a>
+      </div>
+      <span class="corner-label top-left">V-01</span><span class="corner-label bottom-right">EST. YOUR ERA</span>
+    </section>
+
+    <section class="section-block reveal" id="links">
+      <div class="section-heading"><div><span class="section-kicker">FIND ME ONLINE</span><h2>Meine <span class="gradient-text">Links.</span></h2></div><span class="section-index">01 / SOCIALS</span></div>
+      <div class="links-grid" id="linksGrid">
+        <a class="social-card discord" href="https://discord.com/" target="_blank" rel="noopener noreferrer" data-social="discord">
+          <span class="social-icon"><svg viewBox="0 0 24 24"><path d="M19.7 5.4a18 18 0 0 0-4.4-1.4l-.5 1a16 16 0 0 0-5.6 0l-.5-1a18 18 0 0 0-4.4 1.4C1.5 9.5.8 13.5 1.2 17.5a18 18 0 0 0 5.4 2.7l1.2-2a11 11 0 0 1-1.9-.9l.5-.4c3.7 1.7 7.7 1.7 11.3 0l.5.4a12 12 0 0 1-1.9.9l1.2 2a18 18 0 0 0 5.4-2.7c.5-4.6-.8-8.5-3.2-12.1ZM8.8 14.7c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm6.4 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z"/></svg></span>
+          <span class="social-copy"><strong>Discord</strong><small>Hang out & chat</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="social-card twitch" href="https://www.twitch.tv/viper_man_" target="_blank" rel="noopener noreferrer" data-social="twitch">
+          <span class="social-icon"><svg viewBox="0 0 24 24"><path d="M4 3h18v12l-5 5h-4l-3 3H7v-3H3V6l1-3Zm2 2v13h4v3l3-3h4l3-3V5H6Zm5 3h2v6h-2V8Zm5 0h2v6h-2V8Z"/></svg></span>
+          <span class="social-copy"><strong>Twitch</strong><small>Streams & Gaming</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="social-card tiktok" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" data-social="tiktok">
+          <span class="social-icon"><svg viewBox="0 0 24 24"><path d="M19.6 7.2a7.1 7.1 0 0 1-4.4-1.6v9.1a6.1 6.1 0 1 1-5.3-6.1v3.2a3 3 0 1 0 2.1 2.9V2h3.2c.2 2.2 1.8 4.1 4.4 4.4v.8Z"/></svg></span>
+          <span class="social-copy"><strong>TikTok</strong><small>Clips & Moments</small></span><span class="arrow">↗</span>
+        </a>
+        <button class="social-card copy-card" id="copyDiscord" type="button">
+          <span class="social-icon"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg></span>
+          <span class="social-copy"><strong>Discord-Name kopieren</strong><small id="discordNameLabel">viper.2.0</small></span><span class="arrow">⧉</span>
+        </button>
+      </div>
+      <p class="hint-line"><span>✳</span> Links anpassen: Öffne <code>script.js</code> und trage deine Profil-URLs ein.</p>
+    </section>
+
+    <section class="section-block about-layout reveal" id="about">
+      <div class="about-card panel">
+        <span class="section-kicker">A LITTLE ABOUT ME</span><h2>Mehr als nur ein <span class="gradient-text">Username.</span></h2>
+        <p>Ich bin gern in Games unterwegs, probiere Technik aus und feiere kreative Projekte. Diese Seite ist mein kleiner Hub — damit du alles Wichtige schnell findest.</p>
+        <div class="about-divider"></div>
+        <div class="about-facts"><div><span class="fact-icon">⌘</span><span><b>Digital Native</b><small>Immer neugierig auf Neues</small></span></div><div><span class="fact-icon">✦</span><span><b>Meine eigene Welt</b><small>Gaming, Clips & Community</small></span></div><div><span class="fact-icon">↗</span><span><b>Stay connected</b><small>Schreib mir auf Discord</small></span></div></div>
+      </div>
+      <div class="side-stack">
+        <div class="quote-card panel"><span class="quote-mark">“</span><p>Mach dein Ding. Der Rest ist Hintergrundrauschen.</p><span class="quote-author">— V.</span><div class="quote-orb"></div></div>
+        <div class="now-card panel"><div class="now-head"><span class="live-dot"></span><span>THE CURRENT VIBE</span><span class="equalizer"><i></i><i></i><i></i><i></i></span></div><h3>Loading next chapter<span class="blink">_</span></h3><div class="vibe-tags"><span>Gaming</span><span>Music</span><span>Creating</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-block mini-cta reveal">
+      <div><span class="section-kicker">LET'S CONNECT</span><h2>Wir sehen uns <span class="gradient-text">online.</span></h2><p>Du hast Bock auf ein Game oder willst einfach quatschen? Du weißt, wo du mich findest.</p></div>
+      <a class="primary-button" href="https://discord.com/" target="_blank" rel="noopener noreferrer" data-social="discord">Join the conversation <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">V</span><span>VIPER<span class="brand-dot">.</span></span></a><span>Made with <b>✦</b> and a little chaos.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
